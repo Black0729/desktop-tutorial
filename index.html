@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>科学阅读 ScienceReading</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="topbar page-shell">
+      <a class="brand" href="#" aria-label="科学阅读首页">
+        <span class="brand-mark">◇</span>
+        <span>
+          <strong>科学阅读</strong>
+          <small>ScienceReading</small>
+        </span>
+      </a>
+      <button class="mobile-nav-toggle" aria-label="展开菜单" aria-expanded="false"><span></span></button>
+      <div class="nav-links" aria-label="主导航">
+        <button class="nav-link active" data-target="journals">学科专辑</button>
+        <button class="nav-link" data-target="topics">热点专题</button>
+        <button class="nav-link" data-target="ranking">科学榜单</button>
+        <button class="nav-link" data-target="news">资讯动态</button>
+        <button class="nav-link" data-target="support">服务支持</button>
+        <button class="nav-link cn">CNOABook</button>
+      </div>
+      <div class="top-actions">
+        <button class="icon-btn" id="topSearch" aria-label="打开搜索">
+          <svg viewBox="0 0 24 24"><path d="m21 21-4.3-4.3m1.3-5.2a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z"/></svg>
+        </button>
+        <button class="icon-btn" id="noticeBtn" aria-label="通知">
+          <svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 7-3 7h18s-3 0-3-7"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+        </button>
+        <button class="user-chip" id="userMenuBtn">
+          <span class="avatar"></span>
+          <span>以琳化人生</span>
+          <svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="user-menu" id="userMenu">
+          <button>我的书架</button>
+          <button>阅读记录</button>
+          <button>账号设置</button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero-main page-shell">
+      <div class="hero-copy">
+        <h1>科学向新·智汇起航</h1>
+        <p>为你提供全场景知识服务｜阅读 · 科研一键直达</p>
+        <form class="search-card" id="searchForm">
+          <button class="select-pill" type="button" id="categoryBtn">全部 <span>⌄</span></button>
+          <div class="category-menu" id="categoryMenu">
+            <button type="button" data-type="全部">全部</button>
+            <button type="button" data-type="图书">图书</button>
+            <button type="button" data-type="专题">专题</button>
+            <button type="button" data-type="资讯">资讯</button>
+          </div>
+          <input id="searchInput" type="search" placeholder="海量学术资源，静待你的探索" />
+          <button class="search-submit" type="submit" aria-label="搜索">
+            <svg viewBox="0 0 24 24"><path d="m21 21-4.3-4.3m1.3-5.2a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z"/></svg>
+          </button>
+          <button class="advanced" type="button">高级检索</button>
+        </form>
+        <div class="hot-words">
+          <span>热点推荐：</span>
+          <button>固态电池</button>
+          <button>人工智能</button>
+          <button>合成生物学</button>
+          <button>碳中和</button>
+          <button>量子计算</button>
+        </div>
+      </div>
+
+      <aside class="login-panel" id="loginPanel">
+        <div class="panel-head">
+          <span class="panel-avatar"></span>
+          <div>
+            <strong id="loginTitle">登录后</strong>
+            <p>为你开启专属阅读服务</p>
+          </div>
+        </div>
+        <ul>
+          <li><span></span>个性化阅读推荐</li>
+          <li><span></span>文献深度阅读</li>
+          <li><span></span>收藏与笔记</li>
+          <li><span></span>阅读数据同步</li>
+        </ul>
+        <button class="primary-btn" id="loginBtn">立即登录</button>
+      </aside>
+    </section>
+  </header>
+
+  <main>
+    <section class="stats-strip page-shell">
+      <article>
+        <span class="round-icon book"></span>
+        <div><strong>62,300+</strong><p>图书</p></div>
+      </article>
+      <article>
+        <span class="round-icon bag"></span>
+        <div><strong>2,500+</strong><p>近一年新书</p></div>
+      </article>
+      <article>
+        <span class="round-icon open"></span>
+        <div><strong>400+</strong><p>近三月新书</p></div>
+      </article>
+    </section>
+
+    <section class="panel page-shell" id="journals">
+      <div class="section-title">
+        <h2><span class="section-icon icon-service"></span>你可以在这里做什么</h2>
+        <a href="#">更多 →</a>
+      </div>
+      <div class="feature-grid">
+        <button class="feature-card">
+          <i class="feature-icon green feature-read"></i>
+          <span><strong>学科文献研读</strong><em>学科文献与文献研读学科文献研读研读</em></span>
+        </button>
+        <button class="feature-card">
+          <i class="feature-icon yellow feature-topic"></i>
+          <span><strong>热点专题追踪</strong><em>学科文学科文献研读学科文献研读研读</em></span>
+        </button>
+        <button class="feature-card">
+          <i class="feature-icon cyan feature-rank"></i>
+          <span><strong>阅读热度榜单</strong><em>学科文学科文献研读学科文献研读研读</em></span>
+        </button>
+        <button class="feature-card">
+          <i class="feature-icon coral feature-download"></i>
+          <span><strong>开放获取下载</strong><em>学科文学科文献研读学科文献研读研读</em></span>
+        </button>
+        <button class="feature-card">
+          <i class="feature-icon violet feature-resource"></i>
+          <span><strong>特色资源研读</strong><em>学科文学科文献研读学科文献研读研读</em></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="panel page-shell">
+      <div class="section-title">
+        <h2><span class="section-icon icon-target"></span>选择你的阅读场景</h2>
+      </div>
+      <div class="scene-grid" id="sceneGrid">
+        <button class="scene-card active blue" data-scene="课业研读">
+          <strong>课业研读</strong>
+          <p>教材、教辅、培训用书、考试用书</p>
+          <small>→</small>
+          <img class="scene-ill" src="./assets/scenes/scene-01.png" alt="课业研读图标" />
+        </button>
+        <button class="scene-card green" data-scene="科研查询">
+          <strong>科研查询</strong>
+          <p>专著、基础理论、论文集、基本资料</p>
+          <small>→</small>
+          <img class="scene-ill" src="./assets/scenes/scene-02.png" alt="科研查询图标" />
+        </button>
+        <button class="scene-card purple" data-scene="图典综览">
+          <strong>图典综览</strong>
+          <p>图册、报告类、综述、专业工具书</p>
+          <small>→</small>
+          <img class="scene-ill" src="./assets/scenes/scene-03.png" alt="图典综览图标" />
+        </button>
+        <button class="scene-card orange" data-scene="大众品读">
+          <strong>大众品读</strong>
+          <p>传记科普、生活健康、应用技术、经营管理、文学艺术</p>
+          <small>→</small>
+          <img class="scene-ill" src="./assets/scenes/scene-04.png" alt="大众品读图标" />
+        </button>
+      </div>
+    </section>
+
+    <div class="page-shell two-columns">
+      <section class="panel compact">
+        <div class="section-title">
+          <h2><span class="section-icon icon-book"></span>新书速递</h2>
+          <a href="#">更多 →</a>
+        </div>
+        <div class="book-grid">
+          <article class="book-item" data-searchable="广义函数与函数空间导论 里斯">
+            <img class="book-cover-img" src="./assets/covers/book-01.svg" alt="广义函数与函数空间导论封面" />
+            <div>
+              <h3>广义函数与函数空间导论</h3>
+              <p><b class="free">免费获取</b><b class="open-tag">开放获取</b></p>
+              <small>作者：里斯</small>
+            </div>
+          </article>
+          <article class="book-item" data-searchable="冲击波物理 冲击物性数据">
+            <img class="book-cover-img" src="./assets/covers/book-02.svg" alt="冲击波物理封面" />
+            <div>
+              <h3>冲击波物理：冲击物性数据</h3>
+              <p><b class="free">免费获取</b><b class="open-tag">开放获取</b></p>
+              <small>作者：里斯</small>
+            </div>
+          </article>
+          <article class="book-item" data-searchable="数学分析教程 上册 第二版">
+            <img class="book-cover-img" src="./assets/covers/book-03.svg" alt="数学分析教程封面" />
+            <div>
+              <h3>数学分析教程（上册）（第二版）</h3>
+              <p><b class="free">免费获取</b><b class="open-tag">开放获取</b></p>
+              <small>作者：里斯</small>
+            </div>
+          </article>
+          <article class="book-item" data-searchable="力学与理论力学 力学与理论力学">
+            <img class="book-cover-img" src="./assets/covers/book-04.svg" alt="力学与理论力学封面" />
+            <div>
+              <h3>力学与理论力学力学与理论力学力学与理论力学</h3>
+              <p><b class="free">免费获取</b><b class="open-tag">开放获取</b></p>
+              <small>作者：里斯</small>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel compact" id="ranking">
+        <div class="section-title">
+          <h2><span class="section-icon icon-rank"></span>热度排行</h2>
+          <a href="#">更多 →</a>
+        </div>
+        <div class="rank-grid">
+          <article class="rank-card cyan-rank">
+            <h3>热读榜 ›</h3>
+            <ol>
+              <li><b>01</b> 现代物理学导论</li>
+              <li><b>02</b> 书名线性拓扑空间...</li>
+              <li><b>03</b> 广义函数与函数空...</li>
+              <li><b>04</b> 数学分析教程</li>
+              <li><b>05</b> 线性拓扑空间选择</li>
+            </ol>
+          </article>
+          <article class="rank-card blue-rank">
+            <h3>编辑推荐榜 ›</h3>
+            <ol>
+              <li><b>01</b> 现代物理学导论</li>
+              <li><b>02</b> 书名线性拓扑空间...</li>
+              <li><b>03</b> 广义函数与函数空...</li>
+              <li><b>04</b> 数学分析教程</li>
+              <li><b>05</b> 线性拓扑空间选择</li>
+            </ol>
+          </article>
+          <article class="rank-card purple-rank">
+            <h3>名家推荐 ›</h3>
+            <ol>
+              <li><b>01</b> 现代物理学导论</li>
+              <li><b>02</b> 书名线性拓扑空间...</li>
+              <li><b>03</b> 广义函数与函数空...</li>
+              <li><b>04</b> 数学分析教程</li>
+              <li><b>05</b> 线性拓扑空间选择</li>
+            </ol>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <section class="panel page-shell" id="topics">
+      <div class="section-title">
+        <h2><span class="section-icon icon-hot"></span>热点推荐</h2>
+        <div class="slider-actions">
+          <button id="prevHot" aria-label="上一组">←</button>
+          <button id="nextHot" aria-label="下一组">→</button>
+        </div>
+      </div>
+      <div class="hot-slider" id="hotSlider">
+        <article class="banner b1" data-searchable="万物向新"><strong>万物向新</strong><p>2026大型科普创新主题大会</p></article>
+        <article class="banner b2" data-searchable="预见未来"><strong>THE FUTURE HAS COME</strong><p>预见 · 未来</p></article>
+        <article class="banner b3" data-searchable="多元与合作共赢与发展"><strong>多元与合作共赢与发展</strong><p>构建企业数字论坛</p></article>
+        <article class="banner b4" data-searchable="AI赋能产业新纪元"><strong>AI赋能<br>产业新纪元</strong><p>技术前沿 × 落地应用</p></article>
+        <article class="banner b5" data-searchable="数字经济新未来"><strong>数字经济<br>新未来</strong><p>20XX互联网高峰大会</p></article>
+      </div>
+      <div class="caption-row">
+        <span>标题文本标题文本标题文本标题文本</span>
+        <span>标题文本标题文本标题文本标题多一行...</span>
+        <span>标题文本标题文本标题文本标题文本</span>
+        <span>标题文本标题文本标题文本标题文本</span>
+        <span>标题文本标题文本标题文本标题文本</span>
+      </div>
+    </section>
+
+    <div class="page-shell two-columns bottom-columns">
+      <section class="panel compact">
+        <div class="section-title">
+          <h2><span class="section-icon icon-curated"></span>深度甄选</h2>
+        </div>
+        <div class="tabs" id="deepTabs">
+          <button class="active" data-tab="classic">经典必读</button>
+          <button data-tab="academic">院士著作</button>
+          <button data-tab="ai">人工智能前沿</button>
+        </div>
+        <div class="deep-books" id="deepBooks"></div>
+      </section>
+
+      <section class="panel compact" id="news">
+        <div class="section-title">
+          <h2><span class="section-icon icon-news"></span>资讯动态</h2>
+          <a href="#">更多 →</a>
+        </div>
+        <div class="news-list">
+          <article>
+            <time><b>04/01</b><span>2026</span></time>
+            <div><h3>科学出版社荣获第六届中国出版政府奖6个奖项</h3><p>近日，中国科学技术第六届中国出版政府奖公布，《碳中和：逻辑体系与技术需求》...</p></div>
+          </article>
+          <article>
+            <time><b>02/02</b><span>2026</span></time>
+            <div><h3>中国科传连续第七年荣登全球出版50强榜单</h3><p>在这一国际权威榜单中实现连续上榜，不仅彰显了中国科传稳中向上的发展韧性...</p></div>
+          </article>
+          <article>
+            <time><b>11/14</b><span>2025</span></time>
+            <div><h3>科学出版社与山西医科大学签署战略协议</h3><p>2025年11月上旬，中国科技出版传媒股份有限公司与山西医科大学签署...</p></div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <section class="panel page-shell">
+      <div class="section-title">
+        <h2><span class="section-icon icon-resource"></span>特色资源</h2>
+      </div>
+      <div class="resource-grid">
+        <article class="resource large panda" data-searchable="中国生物志库">
+          <h3>中国生物志库</h3>
+          <p>中国生物志库是我国首个权威发布且具有完整知识产权的中国生物物种全信息数据库，收录了中国近10万种现生生物物种。</p>
+          <button>查看</button>
+        </article>
+        <article class="resource herb" data-searchable="本草数典中药知识库"><h3>本草数典中药知识库</h3><p>中国生物志库是我国首个权威发布且具有完整知识产权的中国生物物种全信息数据库。</p></article>
+        <article class="resource geo" data-searchable="中国古生物地层知识库"><h3>中国古生物地层知识库</h3><p>中国生物志库是我国首个权威发布且具有完整知识产权的中国生物物种全信息数据库。</p></article>
+        <article class="resource sci" data-searchable="科学智库"><h3>科学智库</h3><p>中国生物志库是我国首个权威发布且具有完整知识产权的中国生物物种全信息数据库。</p></article>
+        <article class="resource engine" data-searchable="SciEngine"><h3>SciEngine</h3><p>中国生物志库是我国首个权威发布且具有完整知识产权的中国生物物种全信息数据库。</p></article>
+      </div>
+    </section>
+
+    <section class="panel page-shell">
+      <div class="section-title">
+        <h2><span class="section-icon icon-link"></span>友情链接</h2>
+      </div>
+      <div class="friend-grid">
+        <a href="#"><span>CNKI</span><small>中国知网<br>www.cnki.net</small></a>
+        <a href="#"><span>CNKI</span><small>中国知网<br>www.cnki.net</small></a>
+        <a href="#"><span>CNKI</span><small>中国知网<br>www.cnki.net</small></a>
+        <a href="#"><span>CNKI</span><small>中国知网<br>www.cnki.net</small></a>
+        <a href="#"><span>CNKI</span><small>中国知网<br>www.cnki.net</small></a>
+        <a href="#"><span>CNKI</span><small>中国知网<br>www.cnki.net</small></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="support">
+    <div class="footer-inner page-shell">
+      <div class="footer-brand">
+        <a class="brand" href="#"><span class="brand-mark">◇</span><span><strong>科学阅读</strong><small>ScienceReading</small></span></a>
+        <p>KX Reader阅读器下载</p>
+      </div>
+      <div>
+        <h3>联系我们</h3>
+        <p>地址：北京市东城区东皇城根北街16号</p>
+        <p>邮编：100717</p>
+        <p>Email：elib@cspm.com.cn</p>
+      </div>
+      <div>
+        <h3>销售咨询</h3>
+        <p>电话：010-64014357</p>
+        <p>Email：elib@cspm.com.cn</p>
+        <p>个人购书访问：www.ecsponline.com</p>
+      </div>
+      <div>
+        <h3>正版权威学术</h3>
+        <p>正版资源保障</p>
+        <p>视频学科覆盖</p>
+        <p>学习阅读服务</p>
+        <p>安全稳定体验</p>
+      </div>
+    </div>
+    <div class="copyright page-shell">
+      <span>版权所有 © 中国科技出版传媒股份有限公司</span>
+      <span>京ICP备14028887号-19</span>
+      <span>京公网安备11010102004272</span>
+    </div>
+  </footer>
+
+  <div class="modal" id="loginModal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="closeModal" aria-label="关闭">×</button>
+      <h2 id="modalTitle">登录科学阅读</h2>
+      <p>输入任意手机号即可体验页面交互状态。</p>
+      <label>手机号<input id="phoneInput" type="tel" placeholder="请输入手机号" /></label>
+      <label>验证码<input type="text" placeholder="123456" /></label>
+      <button class="primary-btn" id="confirmLogin">登录</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="./script.js"></script>
+</body>
+</html>

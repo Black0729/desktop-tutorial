@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="340" viewBox="0 0 240 340">
+  <defs>
+    <radialGradient id="r" cx=".72" cy=".24" r=".55">
+      <stop stop-color="#39a6ff"/>
+      <stop offset=".45" stop-color="#123d7b"/>
+      <stop offset="1" stop-color="#061530"/>
+    </radialGradient>
+    <linearGradient id="line" x1="0" x2="1">
+      <stop stop-color="#69d7ff"/>
+      <stop offset="1" stop-color="#ff9e45"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="340" rx="8" fill="url(#r)"/>
+  <rect x="0" width="18" height="340" fill="#031022" opacity=".75"/>
+  <path d="M34 220c45-44 84-42 142-28 15 4 26 3 38-6" fill="none" stroke="url(#line)" stroke-width="4"/>
+  <path d="M34 238c57-28 95-21 160 8" fill="none" stroke="#52c8ff" stroke-width="2" opacity=".7"/>
+  <circle cx="181" cy="78" r="42" fill="#65caff" opacity=".2"/>
+  <text x="35" y="86" font-size="28" font-weight="700" fill="#fff" font-family="Arial, Microsoft YaHei">冲击波物理</text>
+  <text x="35" y="126" font-size="20" font-weight="700" fill="#cbeaff" font-family="Arial, Microsoft YaHei">冲击物性数据</text>
+  <text x="35" y="166" font-size="13" fill="#8ed7ff" font-family="Arial">SHOCK WAVE PHYSICS</text>
+  <text x="35" y="306" font-size="16" fill="#ffffff" font-family="Arial, Microsoft YaHei">科学出版社</text>
+</svg>

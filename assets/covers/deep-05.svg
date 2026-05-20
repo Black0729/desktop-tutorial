@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="340" viewBox="0 0 240 340">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#eff8f0"/>
+      <stop offset=".56" stop-color="#c8dcbf"/>
+      <stop offset="1" stop-color="#78976a"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="340" rx="8" fill="url(#bg)"/>
+  <rect x="0" width="18" height="340" fill="#607f54"/>
+  <rect x="34" y="36" width="172" height="260" rx="6" fill="#ffffff" opacity=".24"/>
+  <g fill="none" stroke="#254e35" stroke-width="5">
+    <circle cx="74" cy="220" r="24"/>
+    <circle cx="124" cy="183" r="24"/>
+    <circle cx="176" cy="224" r="24"/>
+    <path d="M93 206l12-9M143 198l14 12"/>
+  </g>
+  <text x="42" y="82" font-size="28" font-weight="700" fill="#244735" font-family="Arial, Microsoft YaHei">组合数学</text>
+  <text x="42" y="120" font-size="28" font-weight="700" fill="#244735" font-family="Arial, Microsoft YaHei">及应用</text>
+  <text x="42" y="312" font-size="15" fill="#244735" font-family="Arial, Microsoft YaHei">数学科学文库</text>
+</svg>

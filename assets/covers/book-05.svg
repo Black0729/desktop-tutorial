@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="340" viewBox="0 0 240 340">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#fff06b"/>
+      <stop offset="1" stop-color="#f2c934"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="340" rx="8" fill="url(#g)"/>
+  <rect x="0" width="20" height="340" fill="#d5ae2b"/>
+  <path d="M48 226c38-90 77-90 116 0" fill="none" stroke="#111b43" stroke-width="5"/>
+  <path d="M48 226h134" stroke="#111b43" stroke-width="5"/>
+  <circle cx="115" cy="226" r="17" fill="#111b43"/>
+  <text x="42" y="86" font-size="29" font-weight="700" fill="#172c5f" font-family="Arial, Microsoft YaHei">时序收敛的</text>
+  <text x="42" y="126" font-size="29" font-weight="700" fill="#172c5f" font-family="Arial, Microsoft YaHei">艺术</text>
+  <text x="42" y="166" font-size="14" fill="#5b5c3a" font-family="Arial">TEMPORAL CONVERGENCE</text>
+  <text x="42" y="308" font-size="16" fill="#172c5f" font-family="Arial, Microsoft YaHei">计算科学经典</text>
+</svg>

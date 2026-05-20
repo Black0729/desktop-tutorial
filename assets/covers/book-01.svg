@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="340" viewBox="0 0 240 340">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#fff16a"/>
+      <stop offset=".72" stop-color="#e0cf44"/>
+      <stop offset="1" stop-color="#c7b836"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="340" rx="8" fill="url(#g)"/>
+  <rect x="0" width="20" height="340" fill="#d2c238"/>
+  <circle cx="198" cy="58" r="27" fill="#fff7a5" opacity=".65"/>
+  <path d="M42 94h120M42 106h92M42 118h112" stroke="#736c1e" stroke-width="4"/>
+  <text x="42" y="166" font-size="27" font-weight="700" fill="#16386b" font-family="Arial, Microsoft YaHei">广义函数与</text>
+  <text x="42" y="202" font-size="27" font-weight="700" fill="#16386b" font-family="Arial, Microsoft YaHei">函数空间导论</text>
+  <text x="42" y="248" font-size="15" fill="#41517a" font-family="Arial, Microsoft YaHei">GENERALIZED FUNCTIONS</text>
+  <path d="M42 284h150" stroke="#16386b" stroke-width="2"/>
+  <text x="42" y="312" font-size="17" fill="#16386b" font-family="Arial, Microsoft YaHei">科学出版社</text>
+</svg>
