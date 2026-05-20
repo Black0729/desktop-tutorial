@@ -10,17 +10,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          persist-credentials: false
-
-      - name: Setup Node (for compatibility)
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
 
       - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
-          publish_branch: gh-pages
+          branch: gh-pages
+          folder: ./
+          clean: true
+          token: ${{ secrets.GITHUB_TOKEN }}
